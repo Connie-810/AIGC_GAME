@@ -1,3 +1,72 @@
-*
-!/.gitignore
+# =============== 根目录规则 ===============
+# 忽略根目录的所有文件和文件夹
+/*
+# 除了Game_Test文件夹和.gitignore文件
 !/Game_Test/
+!.gitignore
+
+# =============== Unity特定规则 ===============
+# Unity临时和生成文件
+Game_Test/[Tt]emp/
+Game_Test/[Ll]ogs/
+Game_Test/[Ll]ibrary/
+Game_Test/[Oo]bj/
+Game_Test/[Bb]uild/
+Game_Test/[Bb]uilds/
+Game_Test/[Bb]uildReport/
+Game_Test/Assets/AssetStoreTools*
+
+# 自动生成的文件
+Game_Test/.vs/
+Game_Test/.gradle/
+Game_Test/[Ee]xported[Oo]bj/
+Game_Test/[Cc]ollab[Oo]rigin/
+Game_Test/Assets/Plugins/Android/
+
+# Unity设置
+Game_Test/[Uu]ser[Ss]ettings/
+Game_Test/[Mm]emoryCaptures/
+
+# 崩溃报告
+Game_Test/[Ss]tack[Tt]race/
+
+# 构建缓存
+Game_Test/[Pp]ackages/
+Game_Test/[Pp]rojectSettings/Packages/
+
+# 系统文件
+Game_Test/Thumbs.db
+Game_Test/Desktop.ini
+
+# 锁文件
+Game_Test/*.lock
+Game_Test/.lock
+Game_Test/Temp/UnityLockfile
+
+# 不需要的工程文件
+Game_Test/*.csproj
+Game_Test/*.sln
+Game_Test/*.suo
+Game_Test/*.user
+Game_Test/*.userprefs
+Game_Test/*.pidb
+Game_Test/*.booproj
+Game_Test/*.svd
+Game_Test/*.pdb
+Game_Test/*.opendb
+Game_Test/*.VC.db
+
+# OS生成
+Game_Test/.DS_Store
+Game_Test/.DS_Store?
+Game_Test/._*
+Game_Test/.Spotlight-V100
+Game_Test/.Trashes
+Game_Test/ehthumbs.db
+Game_Test/[Tt]humbs.db
+
+# IDE文件
+Game_Test/.idea/
+Game_Test/.vscode/
+Game_Test/*.iws
+Game_Test/Launcher.cs
